@@ -1,0 +1,61 @@
+#separator:tab
+#html:true
+\(p \land (q \lor r)\)	\((p \land q)\lor(p \land r)\)
+\(p \lor (q \land r)\)	\((p \land q)\lor(p\land r)\)
+\(\neg(p \land q)\)	\(\neg p \lor \neg r\)
+\(\neg (p \lor q)\)	\(\neg p \land \neg q\)
+\(\neg(p \Rightarrow q)\)	\(p \land \neg q\)
+\(p \Rightarrow q\)	\(\neg q \Rightarrow \neg p\)
+\(\neg (\forall x\in S, p(x)) \)	\(\exists x\in S, \neg p(x)\)
+\(\neg (\exists x\in S, p(x)) \)	\(\forall x\in S, \neg p(x)\)
+tautology	always true
+contradiction	always false
+propositional variable	a symbol representing a proposition (eg&nbsp;\(p\),&nbsp;\(q\), etc)
+propositional formula	an expression built from propositional variables and logical operators
+truth table	prove equivalences
+\(a \mid b\)	\(\exists k \in \mathbb{Z}, ak = b\)
+parity	an integer&nbsp;\(a\)&nbsp;is even iff&nbsp;\(2 \mid a\)&nbsp;and odd otherwise (i.e.&nbsp;\(2 \mid a + 1\))
+list notation	list them (e.g.&nbsp;\(A = \{1,2,3,\dots\}\))
+set builder notation	\(\{x \in S : p(x)\}\)&nbsp;(other informal variants exist)
+natural numbers&nbsp;\(\mathbb{N}\)	\(\{0,1,2,\dots\}\)
+integers&nbsp;\(\mathbb{Z}\)	\(\{\dots, -2,-1,0,1,2,\dots\}\)
+rationals&nbsp;\(\mathbb{Q}\)	\(\{\frac{a}{b} : a,b \in \mathbb{Z} \land b \ne 0\}\)
+reals&nbsp;\(\mathbb{R}\)	the number line's numbers
+closure for naturals&nbsp;	\(+ / \times\)of two&nbsp;\(\mathbb{N}\)&nbsp;is still&nbsp;\(\mathbb{N}\)
+closure for integers	\(+/-/\times\)&nbsp;of two&nbsp;\(\mathbb{Z}\)&nbsp;is still&nbsp;\(\mathbb{Z}\)
+closure of rationals and reals	\(+/-/\times/\div (\text{except 0})\)&nbsp;of two&nbsp;\(\mathbb{Q}/\mathbb{R}\)&nbsp;is still&nbsp;\(\mathbb{Q}/\mathbb{R}\)
+\(x \not\in X\)	\(\neg (x \in X)\)
+\(X = \varnothing\)	\(\forall x, x \not\in \varnothing\)
+\(A \subseteq B\)	\(\forall x \in A, x \in B\)
+\(X \cap Y\)	\(\{a : a \in X \land a \in Y\}\)
+\(X \cup Y\)	\(\{a : a \in X \lor a \in Y\}\)
+\(X \setminus Y\)	\(\{a : a \in X \land a \not \in Y\}\)
+\(X \times Y\)	\(\{(x,y) : x \in X \land y \in Y\}\)
+prove&nbsp;\(X = Y\)	double containment:&nbsp;\(X \subseteq Y \land Y \subseteq X\)
+\(\displaystyle\bigcap_{i\in I} X_i \)	\(\{a : \forall i \in I, a \in X_i\}\)
+\(\displaystyle\bigcup_{i\in I} X_i\)	\(\{a : \exists i \in I, a \in X_i\}\)
+\(\mathcal{P}(A)\)	\(\{X : X \subseteq A\}\)
+\(A\setminus (X\cup Y)\)	\((A\setminus X)\cap(A\setminus Y)\)
+\(A\setminus (X\cap Y)\)	\((A\setminus X)\cup(A\setminus Y)\)
+\(\displaystyle A\setminus\bigcup_{i\in I}X_i\)	\(\displaystyle\bigcap_{i\in I}(A\setminus X_i)\)
+\(\displaystyle A\setminus\bigcap_{i\in I}X_i\)	\(\displaystyle\bigcup_{i\in I}(A\setminus X_i)\)
+a well defined function	totality, existence, uniqueness
+totality property of a function	\(\forall x \in X, f(x)\)&nbsp;is defined (i.e. domain&nbsp;\(= X\))
+existence property of a function	\(\forall x \in X, f(x) \in Y\)&nbsp;(i.e. codomain&nbsp;\(= Y\))
+uniqueness	\(\forall x, x' \in X, (x = x' =&gt; f(x) = f(x'))\)&nbsp;(i.e. VLT)
+definition of the graph of&nbsp;\(f\)	\(\{(x,y) \in X \times Y : f(x) = y\}\)
+\(g \circ f\)	\(g(f(x))\)
+prove&nbsp;\(f = g\)	same domain, same codomain, and&nbsp;\(\forall x \in X, f(x) = g(x)\)
+identity function	a function&nbsp;\(\text{id}_X : X \rightarrow X, \text{id}_X(x) = x\)
+characteristic function of&nbsp;\(U\)&nbsp;in&nbsp;\(X\)	"\(\chi_U(a)= \begin{cases}
+      1 \text{ if } a \in U \\
+      0 \text{ if } a \not\in U
+   \end{cases}\)"
+image of&nbsp;\(U\)&nbsp;under&nbsp;\(f\)	\(f[U] = \{y \in Y : \exists x \in U, y = f(x)\}\)
+preimage of&nbsp;\(V\)&nbsp;under&nbsp;\(f\)	\(f^{-1}[V] = \{x \in X : f(x) \in V\}\)
+\(f\)&nbsp;is injective	iff&nbsp;\(\forall a,b \in X, (f(a) = f(b) \Rightarrow a = b)\)&nbsp;iff&nbsp;\(f\)&nbsp;is a left inverse
+\(f\)&nbsp;is surjective	iff&nbsp;\(\forall y \in Y, \exists x \in X, f(x) = y\)&nbsp;iff&nbsp;\(f\)&nbsp;is a right inverse
+\(f\)&nbsp;is bijective	iff&nbsp;\(f\)&nbsp;is both injective and surjective iff&nbsp;\(f\)&nbsp;is invertible
+left inverse for&nbsp;\(f\)	a function&nbsp;\(g : Y \rightarrow X\)&nbsp;s.t.&nbsp;\(g \circ f = \text{id}_X\)&nbsp;(implies&nbsp;\(f\)&nbsp;is injective)
+right inverse for&nbsp;\(f\)	a function&nbsp;\(g: Y \rightarrow X\)&nbsp;s.t.&nbsp;\(f \circ g = \text{id}_Y\)&nbsp;(implies&nbsp;\(f\)&nbsp;is surjective)
+inverse (two-sided) for&nbsp;\(f\)	a function&nbsp;\(g\)&nbsp;that is both a left and right inverse, also denoted&nbsp;\(f^{-1}\)&nbsp;(implies&nbsp;\(f\)&nbsp;is bijective)
