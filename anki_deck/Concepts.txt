@@ -2,7 +2,7 @@
 #html:true
 \(p \land (q \lor r)\)	\((p \land q)\lor(p \land r)\)
 \(p \lor (q \land r)\)	\((p \land q)\lor(p\land r)\)
-\(\neg(p \land q)\)	\(\neg p \lor \neg r\)
+\(\neg(p \land q)\)	\(\neg p \lor \neg q\)
 \(\neg (p \lor q)\)	\(\neg p \land \neg q\)
 \(\neg(p \Rightarrow q)\)	\(p \land \neg q\)
 \(p \Rightarrow q\)	\(\neg q \Rightarrow \neg p\)
@@ -25,7 +25,7 @@ closure for naturals&nbsp;	\(+ / \times\)of two&nbsp;\(\mathbb{N}\)&nbsp;is stil
 closure for integers	\(+/-/\times\)&nbsp;of two&nbsp;\(\mathbb{Z}\)&nbsp;is still&nbsp;\(\mathbb{Z}\)
 closure of rationals and reals	\(+/-/\times/\div (\text{except 0})\)&nbsp;of two&nbsp;\(\mathbb{Q}/\mathbb{R}\)&nbsp;is still&nbsp;\(\mathbb{Q}/\mathbb{R}\)
 \(x \not\in X\)	\(\neg (x \in X)\)
-\(X = \varnothing\)	\(\forall x, x \not\in \varnothing\)
+\(X = \varnothing\)	\(\forall x, x \not\in X\)
 \(A \subseteq B\)	\(\forall x \in A, x \in B\)
 \(X \cap Y\)	\(\{a : a \in X \land a \in Y\}\)
 \(X \cup Y\)	\(\{a : a \in X \lor a \in Y\}\)
